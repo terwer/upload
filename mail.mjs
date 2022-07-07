@@ -6,7 +6,7 @@ export default async function sendMail(to, title, msg) {
         host: "smtp.qq.com", // 邮箱的smtp地址
         auth: {
             user: "tangyouwei@qq.com", // 邮箱的smtp地址
-            pass: "${QQMAIL_TOKEN}" // 邮箱授权码
+            pass: $QQMAIL_TOKEN // 邮箱授权码
         }
     });
 
