@@ -1,12 +1,12 @@
 import nodemailer from "nodemailer";
 
-export default async function sendMail(to, title, msg) {
+export default async function sendMail(to, title, msg, mailToken) {
     // 创建transporter
     const transporter = nodemailer.createTransport({
         host: "smtp.qq.com", // 邮箱的smtp地址
         auth: {
             user: "tangyouwei@qq.com", // 邮箱的smtp地址
-            pass: $QQMAIL_TOKEN // 邮箱授权码
+            pass: mailToken // 邮箱授权码
         }
     });
 
