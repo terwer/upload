@@ -19,7 +19,8 @@ fetch('https://api.github.com/repos/' + args[0] + '/' + args[1])
     const to = "youweics@163.com";
     const title = "仓库【" + repoName + "】容量邮件通知邮件✔";
     const msg = "您的仓库【" + repoName + "】目前容量大小为<h1>" + msize + "MB</h1>相当于<h1>" + gsize + "GB</h1>请留意！";
-    const ret = await sendMail(to, title, msg, "QQMAIL_SMTP_TOKEN");
+    console.log("check token is=>" + "$QQMAIL_SMTP_TOKEN");
+    const ret = await sendMail(to, title, msg, "$QQMAIL_SMTP_TOKEN");
     console.log("finish." + ret.response);
 })
     .catch(err => console.log(err));
