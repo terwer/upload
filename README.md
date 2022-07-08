@@ -1,6 +1,10 @@
 # upload
 a place for pic store
 
+# 注意
+
+img 目录为以前历史图片的备份目录，仅用于兼容旧图片，新的图片保存在 public 。
+
 # init next project
 
 ```bash
