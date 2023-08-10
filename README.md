@@ -5,6 +5,24 @@ a place for pic store
 
 img 目录为以前历史图片的备份目录，仅用于兼容旧图片，新的图片保存在 public 。
 
+构建完成之前是：
+
+`https://img1.terwer.space/api/public/202305170045084.jpg`
+
+之后可以用
+
+`https://img1.terwer.space/202305170045084.jpg`
+
+配合 PicGo 插件
+
+```
+设定存储路径 
+public/
+
+设定自定义域名 
+https://img1.terwer.space/api
+```
+
 # init next project
 
 ```bash
