@@ -19,7 +19,8 @@ export default function handler(req, res) {
             res.redirect(307, '/' + imagePath).end()
         } else {
             // 获取中间代理地址
-            const newUrl = 'https://ghproxy.com/https://raw.githubusercontent.com/terwer/upload/main/public/' + imagePath
+            // const newUrl = 'https://ghproxy.com/https://raw.githubusercontent.com/terwer/upload/main/public/' + imagePath
+            const newUrl = 'https://cdn.jsdelivr.net/gh/terwer/upload/public/' + imagePath
             console.log("newUrl=>", newUrl)
             res.redirect(307, newUrl).end()
         }
